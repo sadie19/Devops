@@ -1,0 +1,9 @@
+ .pre-commit-config.yaml
+repos:
+  - repo: local
+	hooks:
+	  - id: flake8
+		entry: flake8 src/ # Focused check
+	  - id: pytest
+		entry: pytest tests/
+		pass_filenames: false
